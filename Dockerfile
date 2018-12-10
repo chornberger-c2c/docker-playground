@@ -1,4 +1,5 @@
 FROM centos 
+USER root
 RUN yum update -y
 RUN yum install httpd -y 
 ADD index.html /var/www/html
